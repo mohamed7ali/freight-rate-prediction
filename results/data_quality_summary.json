@@ -1,0 +1,10 @@
+{
+  "dev_rows": 48000,
+  "negative_weight_rows": 292,
+  "missing_weight_rows": 300,
+  "missing_market_index_rows": 374,
+  "corrupted_target_rows_flagged": 677,
+  "corrupted_target_share_%": 1.41,
+  "val_negative_weight_rows": 145,
+  "val_missing_weight_rows": 165
+}

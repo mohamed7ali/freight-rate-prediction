@@ -1,0 +1,7 @@
+model,MAE,RMSE,MAPE_%,MedAPE_%,MAPE_clean_%,MAE_clean,note
+Baseline: median $/mile by distance bucket x distance,191.557,656.019,8.355,5.44,5.907,137.054,
+"LightGBM, no target cleaning",121.261,635.687,5.374,2.251,2.866,65.623,
+LightGBM + target cleaning (FINAL),98.593,630.599,4.365,1.563,1.852,42.604,533 train rows dropped
+  + market_index & quote_signal as features,149.421,644.767,6.362,3.893,3.956,94.129,worse out-of-time
+(random 80/20 split) final features,116.804,622.48,4.955,2.454,,,random split; not representative of a forward forecast
+(random 80/20 split) + market_index & quote_signal,91.606,617.37,3.931,1.545,,,looks great on a random split (leakage) but fails out-of-time
